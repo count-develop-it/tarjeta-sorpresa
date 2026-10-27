@@ -1,0 +1,105 @@
+body {
+    background-color: #f7f3ed; 
+    background-image: radial-gradient(#e6dbcd 1px, transparent 1px);
+    background-size: 20px 20px; 
+    color: #5c5346;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.scrapbook-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(92, 83, 70, 0.1);
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    border: 2px dashed #dcd0c0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.scrapbook-card::before {
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 25px;
+    background-color: rgba(230, 219, 205, 0.7);
+    border-left: 2px dashed #b5a794;
+    border-right: 2px dashed #b5a794;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    color: #b07d62;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: "Ballet", cursive;
+    font-size: 40px;
+    margin-top: -10px;
+    color: #724319;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 2px solid #e0d4c3;
+    border-radius: 8px;
+    outline: none;
+    width: 75%;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #fdfcf9;
+    font-family: 'Quicksand', sans-serif;
+    color: #5c5346;
+}
+
+button {
+    background-color: #b07d62;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    transition: background-color 1s ease;
+}
+
+button:hover {
+    background-color: #966750;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-msg {
+    color: #c06c6c;
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.fade-out {
+    opacity: 0;
+}
